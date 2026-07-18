@@ -1,0 +1,139 @@
+/* Reseteo básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f9;
+  color: #333333;
+  text-align: center;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 30px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+}
+
+header h1 {
+  color: #0056b3;
+  margin-bottom: 5px;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+header p {
+  color: #666666;
+  font-size: 1.1rem;
+}
+
+/* =========================================
+   Contenedor Principal (Flexbox)
+   ========================================= */
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px 50px 20px;
+}
+
+/* =========================================
+   APLICACIÓN DEL BOX MODEL A LA TARJETA
+   ========================================= */
+.producto {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* Propiedades del Box Model */
+  width: 290px;
+  height: auto;
+  padding: 25px 20px;
+  margin: 10px;
+  border: 1px solid #e0e4e8;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+
+  transition: all 0.3s ease;
+}
+
+/* Efecto Hover de la Tarjeta */
+.producto:hover {
+  transform: translateY(-8px);
+  border-color: #0056b3;
+  box-shadow: 0 12px 25px rgba(0, 86, 179, 0.15);
+}
+
+/* =========================================
+   Estilos de los elementos internos
+   ========================================= */
+.producto img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.producto h3 {
+  color: #1a1a1a;
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.producto p {
+  font-size: 0.9rem;
+  color: #555555;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  flex-grow: 1;
+}
+
+/* =========================================
+   Estilos del Precio y Carrito
+   ========================================= */
+.precio {
+  display: inline-block;
+  background-color: #f8f9fa;
+  color: #0056b3;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 8px 25px;
+  border: 1px solid #0056b3;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.producto:hover .precio {
+  background-color: #0056b3;
+  color: #ffffff;
+}
+
+/* Botón de carrito */
+.btn-carrito {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #0056b3;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.btn-carrito:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 2px 4px rgba(0, 86, 179, 0.3));
+}
+
+footer {
+  padding: 20px;
+  background-color: #ffffff;
+  color: #888888;
+  font-size: 0.9rem;
+  border-top: 1px solid #eeeeee;
+}
