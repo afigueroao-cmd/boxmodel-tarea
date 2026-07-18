@@ -8,7 +8,7 @@ Este proyecto es un catálogo de productos tecnológicos responsivo y estructura
 
 - **Autor:** Adrián Darío Figueroa Onofre
 - **Universidad:** Universidad Técnica Estatal de Quevedo (UTEQ)
-- **Carrera:** Ingeniería de Sistemas
+- **Carrera:** Ingeniería de Sistemas De Información
 - **Nivel:** Segundo Semestre - Paralelo B
 
 ## Tecnologías Utilizadas
