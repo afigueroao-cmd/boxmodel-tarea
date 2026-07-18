@@ -19,12 +19,13 @@ Este proyecto es un catálogo de productos tecnológicos responsivo y estructura
 ## Capturas del Proyecto
 
 A continuación, se muestra el resultado final del catálogo web funcionando:
+
+
 <img width="1111" height="590" alt="image" src="https://github.com/user-attachments/assets/36e2266b-fa48-4dc2-b0df-9a53fd0e217c" />
 
-![Vista Completa del Catálogo](assets/img/captura1.jpg)
+
 <img width="1116" height="594" alt="image" src="https://github.com/user-attachments/assets/5e187cd4-2983-4485-9600-ddd4c49084e6" />
 
-![Detalle de los Productos](assets/img/captura2.jpg)
 
 ## 📂 Estructura del Proyecto
 ```text
