@@ -26,6 +26,15 @@ Este proyecto es un catálogo de productos tecnológicos y accesorios. Inicialme
 
 A continuación, se demuestra la adaptabilidad del sitio en diferentes resoluciones probadas a través de DevTools:
 
+### 📱 Vista Móvil (< 768px)
+![Captura Móvil](assets/img/movil.png)
+
+### 💊 Vista Tablet (768px - 1023px)
+![Captura Tablet](assets/img/tablet.png)
+
+### 💻 Vista Escritorio (> 1024px)
+![Captura Escritorio](assets/img/escritorio.jpg)
+
 ## 📂 Estructura del Proyecto
 
 ```text
