@@ -1,14 +1,14 @@
-# 💻 Catálogo de Equipos - Figueroa Tech
+# Catálogo de Equipos - Figueroa Tech
 
 **Proyecto Académico - Práctica de Diseño Responsivo (Flexbox, CSS Grid y Media Queries)**
 
 Este proyecto es un catálogo de productos tecnológicos y accesorios. Inicialmente estructurado con Box Model clásico, ha sido adaptado y escalado a un **E-commerce 100% Responsivo**. Se implementaron técnicas modernas de maquetación para asegurar que la interfaz se visualice correctamente en dispositivos móviles, tablets y pantallas de escritorio.
 
-## 👨‍🎓 Datos del Estudiante
+## Datos del Estudiante
 
 - **Autor:** Adrián Darío Figueroa Onofre
 - **Universidad:** Universidad Técnica Estatal de Quevedo (UTEQ)
-- **Carrera:** Ingeniería de Sistemas
+- **Carrera:** Ingeniería de Sistemas De Información
 - **Nivel:** Segundo Semestre - Paralelo B
 
 ## 🚀 Tecnologías y Técnicas Utilizadas
@@ -22,7 +22,7 @@ Este proyecto es un catálogo de productos tecnológicos y accesorios. Inicialme
   - **Tablets (768px - 1023px):** Menú adaptado y layout de 2 columnas.
   - **Escritorio (>1024px):** Menú extendido y layout de 3 columnas.
 
-## 📸 Capturas del Proyecto
+## Capturas del Proyecto
 
 A continuación, se demuestra la adaptabilidad del sitio en diferentes resoluciones probadas a través de DevTools:
 
