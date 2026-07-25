@@ -1,0 +1,93 @@
+/* ===========================
+   RESPONSIVE DESIGN - Figueroa Tech
+   =========================== */
+
+/* ===== MÓVILES (< 768px) ===== */
+body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 767px) {
+  header .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Menú vertical en móviles */
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 5px;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 12px;
+  }
+
+  /* Productos en 1 sola columna usando Flexbox */
+  .productos {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
+  }
+
+  .producto {
+    width: 100% !important;
+    max-width: 320px;
+    margin: 0 !important;
+  }
+
+  /* Imágenes fluidas */
+  .producto img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ===== TABLETS (768px - 1023px) ===== */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* 2 Columnas de productos con CSS Grid */
+  .productos {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px !important;
+    padding: 0 !important;
+  }
+
+  .producto {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  header .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* ===== ESCRITORIO (1024px+) ===== */
+@media (min-width: 1024px) {
+  /* CSS Grid para Desktop: 3 Columnas */
+  .productos {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 30px !important;
+    padding: 0 !important;
+  }
+
+  .producto {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

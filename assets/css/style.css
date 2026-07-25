@@ -1,4 +1,4 @@
-/* Reseteo básico */
+/* 1. RESET Y BASE ORIGINALES */
 * {
   margin: 0;
   padding: 0;
@@ -12,48 +12,97 @@ body {
   text-align: center;
 }
 
+/* 2. CONTENEDOR NUEVO */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 3. HEADER NUEVO (Menú responsivo) */
 header {
+  background: #0056b3;
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  color: white;
+  margin: 0;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover h1 {
+  transform: scale(1.08);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 5px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav a.active {
+  background-color: #004494;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 4. TÍTULO DE LA PÁGINA */
+.page-header {
+  padding: 40px 0;
   background-color: #ffffff;
-  padding: 30px 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
-header h1 {
+.page-header h2 {
   color: #0056b3;
-  margin-bottom: 5px;
-  font-size: 2.5rem;
-  letter-spacing: 1px;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
 }
 
-header p {
-  color: #666666;
-  font-size: 1.1rem;
+/* 5. TUS TARJETAS ORIGINALES CON BOX MODEL */
+.productos-section {
+  padding-bottom: 50px;
 }
 
-/* =========================================
-   Contenedor Principal (Flexbox)
-   ========================================= */
 .productos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 35px;
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 0 20px 50px 20px;
 }
 
-/* =========================================
-   APLICACIÓN DEL BOX MODEL A LA TARJETA
-   ========================================= */
 .producto {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  /* Propiedades del Box Model */
   width: 290px;
   height: auto;
   padding: 25px 20px;
@@ -61,20 +110,15 @@ header p {
   border: 1px solid #e0e4e8;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-
   transition: all 0.3s ease;
 }
 
-/* Efecto Hover de la Tarjeta */
 .producto:hover {
   transform: translateY(-8px);
   border-color: #0056b3;
   box-shadow: 0 12px 25px rgba(0, 86, 179, 0.15);
 }
 
-/* =========================================
-   Estilos de los elementos internos
-   ========================================= */
 .producto img {
   width: 100%;
   height: 180px;
@@ -96,9 +140,6 @@ header p {
   flex-grow: 1;
 }
 
-/* =========================================
-   Estilos del Precio y Carrito
-   ========================================= */
 .precio {
   display: inline-block;
   background-color: #f8f9fa;
@@ -108,7 +149,9 @@ header p {
   padding: 8px 25px;
   border: 1px solid #0056b3;
   border-radius: 20px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
   margin-bottom: 15px;
 }
 
@@ -117,23 +160,83 @@ header p {
   color: #ffffff;
 }
 
-/* Botón de carrito */
+/* Estilo base del carrito */
 .btn-carrito {
+  display: inline-block;
   text-decoration: none;
   font-size: 1.5rem;
   color: #0056b3;
-  transition: transform 0.2s ease, filter 0.2s ease;
+  padding: 8px; /* Espacio para que el filo no quede pegado al carrito */
+  border-radius: 50%; /* Hace que el borde sea circular */
+  transition: all 0.2s ease;
 }
 
+/* Efecto al pasar el mouse (el que ya tenías) */
 .btn-carrito:hover {
   transform: scale(1.2);
   filter: drop-shadow(0 2px 4px rgba(0, 86, 179, 0.3));
+  background-color: rgba(
+    0,
+    86,
+    179,
+    0.1
+  ); /* Le da un fondito azul súper clarito */
 }
 
+/* Efecto al hacer CLIC */
+.btn-carrito:active {
+  transform: scale(0.95); /* Hace que se vea "aplastado" hacia adentro */
+  box-shadow: 0 0 0 3px #0056b3; /* Aquí está el filo azul oscuro que pediste */
+  background-color: rgba(
+    0,
+    86,
+    179,
+    0.2
+  ); /* Oscurece un poco más el fondo al presionar */
+}
+
+/* 6. FOOTER NUEVO OSCURO */
 footer {
-  padding: 20px;
-  background-color: #ffffff;
-  color: #888888;
+  background: #1a252f;
+  color: white;
+  padding: 50px 0 20px;
+  margin-top: 40px;
+  border-top: none;
+  text-align: left;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 35px;
+  margin-bottom: 30px;
+}
+
+.footer-section h3 {
+  color: #3498db;
+  margin-bottom: 18px;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #3498db;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 0.9rem;
-  border-top: 1px solid #eeeeee;
 }
